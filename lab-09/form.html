@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+		<form method="get" action="">
+			<input type="color"> <br><br>
+			
+			<input type="datetime-local"> <br><br>
+			
+			<label>Upload your Photo</label>
+			<input type="file" name="photo" accept="image/jpeg" multiple> <br><br>
+			
+			<label>Search your Product</label>
+			<input type="search"> <br><br>
+			
+			<label>Type your FB URL</label>
+			<input type="url">
+		
+			<hr>
+		
+			<input type="text" name="common_code" value="2024" readonly hidden> <br>
+		
+			<label for="student_name"> Student Name: * </label>
+			<input type="text" name="std_name" id="student_name" value="" placeholder="Student Name" required autofocus autocomplete="off" minlength="5" maxlength="8">
+			<br>
+			
+			<label for="student_email"> Student Email: </label>
+			<input type="email" name="std_email" id="student_email" value="" placeholder="Student Email">
+			<br>
+			
+			<label> Registration Number: </label>
+			<input type="number" name="reg_num" min="0" max="6">
+			<br>
+			
+			<label>Contact Number: </label>
+			<input type="tel" name="mobile" minlength="11" maxlength="11">
+			<br>
+			
+			<label>Date of Birth: </label>
+			<input type="date">
+			<br>
+			
+			<label>Password:</label>
+			<input type="password" minlength="5" maxlength="8">
+			<br>
+			
+			<input type="submit" value="Send Messages">
+		</form>
+	</body>
+</html>
