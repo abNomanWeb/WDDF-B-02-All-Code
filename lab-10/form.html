@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+		<fieldset>
+			<legend align="center">Registration Form</legend>
+		<form method="get" action="">
+		
+			<textarea name="opinion" placeholder="Write your comment">Yahoo</textarea>
+			<br><br>
+		
+			<!-- <label>Select your Course</label> -->
+			<select name="course_name" required>
+				<option value="">Select your Course</option>
+				<option value="wddf" selected>WDDF</option>
+				<option value="graphics">Graphics Design</option>
+				<option value="dm">Digital Marketing</option>
+			</select>
+			
+			<br><br>
+			
+			<label>Choose your Shift:</label>
+			<input type="checkbox" name="choose_shift" value="morn"> <label>Morning Shift</label>
+			<input type="checkbox" name="choose_shift" value="day"> <label>Day Shift</label>
+			<input type="checkbox" name="choose_shift" value="even"> <label>Evening Shift</label>
+			<input type="checkbox" name="choose_shift" value="weekend" checked> <label>Weekend Shift</label>
+			
+			<br></br>
+			
+			<label>Select Projects</label>
+			<input type="radio" name="select_projects" value="bytes" checked> <label>Bytes Projects</label>
+			<input type="radio" name="select_projects" value="assets"> <label>Assets Projects</label>
+			
+			<hr>
+			
+			<input type="color"> <br><br>
+			
+			<input type="datetime-local"> <br><br>
+			
+			<label>Upload your Photo</label>
+			<input type="file" name="photo" accept="image/jpeg" multiple> <br><br>
+			
+			<label>Search your Product</label>
+			<input type="search" value="AC"> <br><br>
+			
+			<label>Type your FB URL</label>
+			<input type="url">
+		
+			<hr>
+		
+			<input type="text" name="common_code" value="2024" readonly hidden> <br>
+		
+			<label for="student_name"> Student Name: * </label>
+			<input type="text" name="std_name" id="student_name" value="" placeholder="Student Name" autocomplete="off" minlength="5" maxlength="8">
+			<br>
+			
+			<label for="student_email"> Student Email: </label>
+			<input type="email" name="std_email" id="student_email" value="" placeholder="Student Email">
+			<br>
+			
+			<label> Registration Number: </label>
+			<input type="number" name="reg_num" min="0" max="6">
+			<br>
+			
+			<label>Contact Number: </label>
+			<input type="tel" name="mobile" minlength="11" maxlength="11">
+			<br>
+			
+			<label>Date of Birth: </label>
+			<input type="date" name="dob">
+			<br>
+			
+			<label>Password:</label>
+			<input type="password" minlength="5" maxlength="8">
+			<br>
+			<!-- 
+			<input type="submit" value="Send Messages">
+			<input type="reset" value="Clear Form">
+			-->
+			<button type="submit">Messages Request</button>
+			<button type="reset">Messages Clear</button>
+		</form>
+		</fieldset>
+	</body>
+</html>
