@@ -1,0 +1,107 @@
+/* common area code start */
+body{
+    margin-top: 20px;
+}
+.container{
+    max-width: 1180px;
+    min-width: 400px;
+}
+/* common area code end */
+/* header section start */
+.header-top{
+    background: #006666;
+    padding: 5px 8px;
+}
+.header-top-left a,
+.header-top-right a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.header-top form{
+    position: relative;
+}
+.header-top-left form input{
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+.header-top-left form button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+}
+.header-top-left form button i{
+    font-size: 14px;
+}
+#offcanvas .offcanvas-body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#offcanvas li a{
+    color: #054588;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid #c2c2c2;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s linear;
+}
+#offcanvas li a:hover{
+    color: #00B16A;
+    background: #f3f1f1;
+}
+#header-section .banner{
+    background: url(../img/bb_banner.jpg) no-repeat;
+    background-size: cover;
+    height: 160px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.banner .nav{
+    margin-bottom: 3px;
+    background: #fff;
+    position: relative;
+}
+@media (min-width: 0px) and (max-width: 575px){
+    .banner .nav{
+        display: none;
+    }
+}
+.banner .nav::before{
+    content: '';
+    position: absolute;
+    left: -9%;
+    bottom: 0%;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent;
+}
+.banner .nav li a{
+    color: #054588;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 20px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.banner .nav li a:hover{
+    color: #00B16A;
+    background: #f3f1f1;
+}
+/* .header-top-left form input:focus{
+
+} */
+/* header section end */
